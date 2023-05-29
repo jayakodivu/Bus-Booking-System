@@ -1,0 +1,61 @@
+#include<stdio.h>
+int main()
+{
+	int sheet=0;
+	int amount=0;
+	char root[20];
+	char destination[5][30]={"kandy","kaluthara","colombo","galle","jaffna"};
+	int cps[5]={150,430,450,600,320};
+	printf("enter root");
+	scanf("%s",&root);
+	
+	if(strcmp(destination[0],root)==0)
+		{
+			printf("cost per sheet is %d\n",cps[0]);
+			printf("enter the required sheet size\n");
+			scanf("%d",&sheet);
+			amount=sheet*cps[0];
+			printf("amount is %d\n",amount);
+		}
+	
+	else if(strcmp(destination[1],root)==0)
+		{
+			printf("cost per sheet is %d\n",cps[1]);
+			printf("enter the required sheet size\n");
+			scanf("%d",&sheet);
+			amount=sheet*cps[1];
+			printf("amount is %d\n",amount);	   
+		}
+	
+	else if(strcmp(destination[2],root)==0)
+		{
+			printf("cost per sheet is %d\n",cps[2]);
+			printf("enter the required sheet size\n");
+			scanf("%d",&sheet);
+			amount=sheet*cps[2];
+			printf("amount is %d\n",amount);	   
+		}
+	else if(strcmp(destination[3],root)==0)
+		{
+			printf("cost per sheet is %d\n",cps[3]);
+			printf("enter the required sheet size\n");
+			scanf("%d",&sheet);
+			amount=sheet*cps[3];
+			printf("amount is %d\n",amount);	   
+		}
+	else if(strcmp(destination[4],root)==0)
+		{
+			printf("cost per sheet is %d\n",cps[4]);
+			printf("enter the required sheet size\n");
+			scanf("%d",&sheet);
+			amount=sheet*cps[4];
+			printf("amount is %d\n",amount);	   
+		}
+	else
+		{
+			printf("root is incorrect");
+		}	   
+	return 0;
+
+}
+
