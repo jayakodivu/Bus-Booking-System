@@ -1,0 +1,437 @@
+#include<stdio.h>
+#include<string.h>
+char drivandc(int busnu);
+char b_payment(int seats);
+int main()
+{
+
+    char array1[5][30] = {"AB-1112","54","Kandy","7.15AM","Dambulla, Mathale"};
+	char array2[5][30] = {"AB-1123","54","Kaluthara","6.00AM","Wariyapola,Gampaha"};
+	char array3[5][30] = {"AB-1124","54","Colombo","6.30AM","Kurunegala"};
+	char array4[5][30] = {"AB-1132","54","Galle","8.00PM","Giriulla, Malabe, Wadduwa"};
+	char array5[5][30] = {"AB-1143","54","Jaffna","7.00AM","Wawniya, Kilinochchi"};
+
+	int inputnu=0;
+	char yon[10];
+	char yesno[10][10]={"yes","no"};
+	int busnu=0;
+	int seats=0;
+
+
+	printf("\nWelcome to booking system\n");
+	printf("\n1.kandy\n2.kaluthara\n3.colombo\n4.Galle\n5.Jafffna\n6.Dambulla \n7.Mathale \n8.Wariyapola \n9.Gampaha \n10.Kurunagala \n11.giriulla \n12.Malabe \n13.wadduwa \n14.Wauniya \n15.Kilinochchi");
+	printf("\nWhere you want to go, Enter the number your destination : ");
+	scanf("%d",&inputnu);
+
+	if (inputnu==1){
+		printf("Route details from Anuradhapura to %s\n",array1[2]);
+		printf("Bus number 	: %s\n",array1[0]);
+		printf("Seats 		: %s\n",array1[1]);
+		printf("Starting time 	: %s\n",array1[3]);
+		printf("Stopping places	: %s\n",array1[4]);
+	}
+	else if(inputnu==6)
+    {
+        printf("Route details from Anuradhapura to %s\n",array1[2]);
+		printf("Bus number 	: %s\n",array1[0]);
+		printf("Seats 		: %s\n",array1[1]);
+		printf("Starting time 	: %s\n",array1[3]);
+		printf("Stopping places	: %s\n",array1[4]);
+    }
+    else if(inputnu==7)
+    {
+        printf("Route details from Anuradhapura to %s\n",array1[2]);
+		printf("Bus number 	: %s\n",array1[0]);
+		printf("Seats 		: %s\n",array1[1]);
+		printf("Starting time 	: %s\n",array1[3]);
+		printf("Stopping places	: %s\n",array1[4]);
+    }
+
+    else if (inputnu==2){
+		printf("Route details from Anuradhapura to %s\n",array2[2]);
+		printf("Bus number 	: %s\n",array2[0]);
+		printf("Seats 		: %s\n",array2[1]);
+		printf("Starting time 	: %s\n",array2[3]);
+		printf("Stopping places	: %s\n",array2[4]);
+
+	}
+	else if (inputnu==8){
+		printf("Route details from Anuradhapura to %s\n",array2[2]);
+		printf("Bus number 	: %s\n",array2[0]);
+		printf("Seats 		: %s\n",array2[1]);
+		printf("Starting time 	: %s\n",array2[3]);
+		printf("Stopping places	: %s\n",array2[4]);
+	}
+	else if (inputnu==9){
+		printf("Route details from Anuradhapura to %s\n",array2[2]);
+		printf("Bus number 	: %s\n",array2[0]);
+		printf("Seats 		: %s\n",array2[1]);
+		printf("Starting time 	: %s\n",array2[3]);
+		printf("Stopping places	: %s\n",array2[4]);
+	}
+	else if (inputnu==3){
+		printf("Route details from Anuradhapura to %s\n",array3[2]);
+		printf("Bus number 	: %s\n",array3[0]);
+		printf("Seats 		: %s\n",array3[1]);
+		printf("Starting time 	: %s\n",array3[3]);
+		printf("Stopping places	: %s\n",array3[4]);
+	}
+	else if (inputnu==10){
+		printf("Route details from Anuradhapura to %s\n",array3[2]);
+		printf("Bus number 	: %s\n",array3[0]);
+		printf("Seats 		: %s\n",array3[1]);
+		printf("Starting time 	: %s\n",array3[3]);
+		printf("Stopping places	: %s\n",array3[4]);
+    }
+    else if (inputnu==4){
+		printf("Route details from Anuradhapura to %s\n",array4[2]);
+		printf("Bus number 	: %s\n",array4[0]);
+		printf("Seats 		: %s\n",array4[1]);
+		printf("Starting time 	: %s\n",array4[3]);
+		printf("Stopping places	: %s\n",array4[4]);
+
+        }
+    else if (inputnu==11){
+		printf("Route details from Anuradhapura to %s\n",array4[2]);
+		printf("Bus number 	: %s\n",array4[0]);
+		printf("Seats 		: %s\n",array4[1]);
+		printf("Starting time 	: %s\n",array4[3]);
+		printf("Stopping places	: %s\n",array4[4]);
+
+        }
+    else if (inputnu==12){
+		printf("Route details from Anuradhapura to %s\n",array4[2]);
+		printf("Bus number 	: %s\n",array4[0]);
+		printf("Seats 		: %s\n",array4[1]);
+		printf("Starting time 	: %s\n",array4[3]);
+		printf("Stopping places	: %s\n",array4[4]);
+
+        }
+    else if (inputnu==13){
+		printf("Route details from Anuradhapura to %s\n",array4[2]);
+		printf("Bus number 	: %s\n",array4[0]);
+		printf("Seats 		: %s\n",array4[1]);
+		printf("Starting time 	: %s\n",array4[3]);
+		printf("Stopping places	: %s\n",array4[4]);
+
+        }
+
+	else if (inputnu==5){
+		printf("Route details from Anuradhapura to %s\n",array5[2]);
+		printf("Bus number 	: %s\n",array5[0]);
+		printf("Seats 		: %s\n",array5[1]);
+		printf("Starting time 	: %s\n",array5[3]);
+		printf("Stopping places	: %s\n",array5[4]);
+	}
+	else if (inputnu==14){
+		printf("Route details from Anuradhapura to %s\n",array5[2]);
+		printf("Bus number 	: %s\n",array5[0]);
+		printf("Seats 		: %s\n",array5[1]);
+		printf("Starting time 	: %s\n",array5[3]);
+		printf("Stopping places	: %s\n",array5[4]);
+	}
+	else if (inputnu==15){
+		printf("Route details from Anuradhapura to %s\n",array5[2]);
+		printf("Bus number 	: %s\n",array5[0]);
+		printf("Seats 		: %s\n",array5[1]);
+		printf("Starting time 	: %s\n",array5[3]);
+		printf("Stopping places	: %s\n",array5[4]);
+	}
+
+	printf("\nDo you like to see about Driver&conducter\n");
+	scanf("%s",&yon);
+
+	if(strcmp(yon,yesno[0])==0)
+    {
+        printf("\n1.AB-1112\n 2.AB-1123\n 3.AB-1124\n 4.AB-1132\n 5.AB-1143\n");
+        printf("\nwitch one is the bus number : ");
+        scanf("%d",&busnu);
+        drivandc(busnu);
+
+        printf("\nDo you like to book seats : ");
+        scanf("%s",&yon);
+
+        if(strcmp(yon,yesno[0])==0)
+        {
+            printf("\nhow meny seats do you want : ");
+            scanf("%d",&seats);
+            b_payment(seats);
+
+            printf("\n Do you like to pay now\n");
+            scanf("%s",&yon);
+            if(strcmp(yon,yesno[0])==0)
+            {
+                printf("\n +++ Payment success +++\n");
+
+            }
+            else
+            {
+                printf("\n thanks for using our system\n");
+            }
+        }
+        else
+        {
+            printf("\nsee you next time\n");
+        }
+
+
+    }
+    else
+    {
+        printf("\nDo you like to book seats : ");
+        scanf("%s",&yon);
+
+        if(strcmp(yon,yesno[0])==0)
+        {
+            printf("\nhow meny seats do you want : ");
+            scanf("%d",&seats);
+            b_payment(seats);
+
+            printf("\n Do you like to pay now\n");
+            scanf("%s",&yon);
+            if(strcmp(yon,yesno[0])==0)
+            {
+                printf("\n +++ Payment success +++\n");
+
+            }
+            else
+            {
+                printf("\n thanks for using our system\n");
+            }
+        }
+        else
+        {
+            printf("\nsee you next time\n");
+        }
+
+    }
+
+
+    return 0;
+}
+
+
+char drivandc(int busno)
+{
+    char array1[9][100]={"AB-1112","W.V.Priyankara","D-122565","896547125v","0758645823","K.T.Siripala","C-457825","860214579v","0778459862"};
+	char array2[9][100]={"AB-1123","H.W.prasanna","D-4191225","853257814v","0759632864","G.S.Anuradha","C-593542","902547223v","0789562452"};
+	char array3[9][100]={"AC-1124","N.Y.Gunadasa","D-562589","791433658v","0725698547","R.Siriwardhana","C-869454","921466788v","0776595256"};
+	char array4[9][100]={"AD-1132","S.M.Nishantha","D-579266","825697582v","0765895482","V.T.Suranga","C-156535","752529576v","0765486785"};
+	char array5[9][100]={"AD-1143","G.M.Somaveera","D-875665","856485591v","0789545593","J.A.Weerasena","C-2569870","842569745v","0758569542"};
+
+
+	if(busno==1)
+		{
+			printf("Driver details\n");
+			printf("Driver name		: %s\n",array1[1]);
+			printf("Driver No		: %s\n",array1[2]);
+			printf("NIC Number		: %s\n",array1[3]);
+			printf("Phone Number	: %s\n\n",array1[4]);
+
+			printf("Conductor details\n");
+			printf("Conductor name	: %s\n",array1[5]);
+			printf("Conductor No	: %s\n",array1[6]);
+			printf("NIC Number		: %s\n",array1[7]);
+			printf("Phone Number	: %s\n",array1[8]);
+		}
+
+	else if(busno==2)
+		{
+
+			printf("Driver details\n");
+			printf("Driver name		: %s\n",array2[1]);
+			printf("Driver No		: %s\n",array2[2]);
+			printf("NIC Number		: %s\n",array2[3]);
+			printf("Phone Number	: %s\n\n",array2[4]);
+
+			printf("Conductor details\n");
+			printf("Conductor name	: %s\n",array2[5]);
+			printf("Conductor No	: %s\n",array2[6]);
+			printf("NIC Number		: %s\n",array2[7]);
+			printf("Phone Number	: %s\n",array2[8]);
+
+		}
+
+	else if (busno==3)
+		{
+
+			printf("Driver details\n");
+			printf("Driver name		: %s\n",array3[1]);
+			printf("Driver No		: %s\n",array3[2]);
+			printf("NIC Number		: %s\n",array3[3]);
+			printf("Phone Number	: %s\n\n",array3[4]);
+
+			printf("Conductor details\n");
+			printf("Conductor name	: %s\n",array3[5]);
+			printf("Conductor No	: %s\n",array3[6]);
+			printf("NIC Number      : %s\n",array3[7]);
+			printf("Phone Number	: %s\n",array3[8]);
+
+		}
+
+	else if (busno==4)
+		{
+
+			printf("Driver details\n");
+			printf("Driver name		: %s\n",array4[1]);
+			printf("Driver No		: %s\n",array4[2]);
+			printf("NIC Number		: %s\n",array4[3]);
+			printf("Phone Number	: %s\n\n",array4[4]);
+
+			printf("Conductor details\n");
+			printf("Conductor name	: %s\n",array4[5]);
+			printf("Conductor No	: %s\n",array4[6]);
+			printf("NIC Number		: %s\n",array4[7]);
+			printf("Phone Number	: %s\n",array4[8]);
+
+		}
+
+	else if (busno==5)
+		{
+
+			printf("Driver details\n");
+			printf("Driver name		: %s\n",array5[1]);
+			printf("Driver No		: %s\n",array5[2]);
+			printf("NIC Number		: %s\n",array5[3]);
+			printf("Phone Number	: %s\n\n",array5[4]);
+
+			printf("Conductor details\n");
+			printf("Conductor name	: %s\n",array5[5]);
+			printf("Conductor No	: %s\n",array5[6]);
+			printf("NIC Number		: %s\n",array5[7]);
+			printf("Phone Number	: %s\n",array5[8]);
+
+		}
+
+
+
+
+
+	else
+		{
+			printf("bus num is incorrect");
+		}
+}
+char b_payment(int seats)
+{
+    char destination[100][100]={"Anuradhapura-kandy","Anuradhapura-kaluthara","Anuradhapura-colombo","Anuradhapura-Galle","Anuradhapura-Jafffna","Anuradhapura-Dambulla","Anuradhapura-Mathale","Anuradhapura-Wariyapola","Anuradhapura-Gampaha","Anuradhapura-Kurunagala","Anuradhapura-giriulla","Anuradhapura-Malabe","Anuradhapura-wadduwa","Anuradhapura-Wauniya","Anuradhapura-Kilinochchi"};
+	int cps[20]={400,150,250,550,250,300,350,200,750,250,350,300,350,150,250};
+	int num=0;
+	int amount=0;
+    printf("\n %d ,seats from Anuradhapura to ?",seats);
+    printf("\n1.kandy\n2.kaluthara\n3.colombo\n4.Galle\n5.Jafffna\n6.Dambulla \n7.Mathale \n8.Wariyapola \n9.Gampaha \n10.Kurunagala \n11.giriulla \n12.Malabe \n13.wadduwa \n14.Wauniya \n15.Kilinochchi");
+    printf("\nEnter your destination : \n");
+    scanf("%d",&num);
+
+    if(num==1)
+    {
+        printf("\n %s",destination[num-1]);
+        printf("\ncost per sheet is %d\n",cps[num-1]);
+        amount=seats*cps[num-1];
+        printf("\namount is %d\n",amount);
+    }
+    else if(num==2)
+    {
+        printf("\n %s",destination[num-1]);
+        printf("\ncost per sheet is %d\n",cps[num-1]);
+        amount=seats*cps[num-1];
+        printf("\namount is %d\n",amount);
+    }
+    else if(num==3)
+    {
+        printf("\n %s",destination[num-1]);
+        printf("\ncost per sheet is %d\n",cps[num-1]);
+        amount=seats*cps[num-1];
+        printf("\namount is %d\n",amount);
+    }
+    else if(num==4)
+    {
+        printf("\n %s",destination[num-1]);
+        printf("\ncost per sheet is %d\n",cps[num-1]);
+        amount=seats*cps[num-1];
+        printf("\namount is %d\n",amount);
+    }
+    else if(num==5)
+    {
+        printf("\n %s",destination[num-1]);
+        printf("\ncost per sheet is %d\n",cps[num-1]);
+        amount=seats*cps[num-1];
+        printf("\namount is %d\n",amount);
+    }
+    else if(num==6)
+    {
+        printf("\n %s",destination[num-1]);
+        printf("\ncost per sheet is %d\n",cps[num-1]);
+        amount=seats*cps[num-1];
+        printf("\namount is %d\n",amount);
+    }
+    else if(num==7)
+    {
+        printf("\n %s",destination[num-1]);
+        printf("\ncost per sheet is %d\n",cps[num-1]);
+        amount=seats*cps[num-1];
+        printf("\namount is %d\n",amount);
+    }
+    else if(num==8)
+    {
+        printf("\n %s",destination[num-1]);
+        printf("\ncost per sheet is %d\n",cps[num-1]);
+        amount=seats*cps[num-1];
+        printf("\namount is %d\n",amount);
+    }
+    else if(num==9)
+    {
+        printf("\n %s",destination[num-1]);
+        printf("\ncost per sheet is %d\n",cps[num-1]);
+        amount=seats*cps[num-1];
+        printf("\namount is %d\n",amount);
+    }
+    else if(num==10)
+    {
+        printf("\n %s",destination[num-1]);
+        printf("\ncost per sheet is %d\n",cps[num-1]);
+        amount=seats*cps[num-1];
+        printf("\namount is %d\n",amount);
+    }
+    else if(num==11)
+    {
+        printf("\n %s",destination[num-1]);
+        printf("\ncost per sheet is %d\n",cps[num-1]);
+        amount=seats*cps[num-1];
+        printf("\namount is %d\n",amount);
+    }
+    else if(num==12)
+    {
+        printf("\n %s",destination[num-1]);
+        printf("\ncost per sheet is %d\n",cps[num-1]);
+        amount=seats*cps[num-1];
+        printf("\namount is %d\n",amount);
+    }
+    else if(num==13)
+    {
+        printf("\n %s",destination[num-1]);
+        printf("\ncost per sheet is %d\n",cps[num-1]);
+        amount=seats*cps[num-1];
+        printf("\namount is %d\n",amount);
+    }
+    else if(num==14)
+    {
+        printf("\n %s",destination[num-1]);
+        printf("\ncost per sheet is %d\n",cps[num-1]);
+        amount=seats*cps[num-1];
+        printf("\namount is %d\n",amount);
+    }
+    else if(num==15)
+    {
+        printf("\n %s",destination[num-1]);
+        printf("\ncost per sheet is %d\n",cps[num-1]);
+        amount=seats*cps[num-1];
+        printf("\namount is %d\n",amount);
+    }
+    else
+    {
+        printf("\n Wrong number, try again\n");
+    }
+
+
+}
