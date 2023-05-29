@@ -1,0 +1,103 @@
+#include<stdio.h>
+int main()
+{
+	char busno[10];
+	char array1[9][100]={"AB-1112","W.V.Priyankara","D-122565","896547125v","0758645823","K.T.Siripala","C-457825","860214579v","0778459862"};
+	char array2[9][100]={"AB-1123","H.W.prasanna","D-4191225","853257814v","0759632864","G.S.Anuradha","C-593542","902547223v","0789562452"};
+	char array3[9][100]={"AC-1124","N.Y.Gunadasa","D-562589","791433658v","0725698547","R.Siriwardhana","C-869454","921466788v","0776595256"};
+	char array4[9][100]={"AD-1132","S.M.Nishantha","D-579266","825697582v","0765895482","V.T.Suranga","C-156535","752529576v","0765486785"};
+	char array5[9][100]={"AD-1143","G.M.Somaveera","D-875665","856485591v","0789545593","J.A.Weerasena","C-2569870","842569745v","0758569542"};
+	
+	printf("enter bus number");
+	scanf("%s",&busno);
+	printf("bus number :  %s\n\n",busno);
+	
+	if(strcmp(busno,array1[0])==0)
+		{
+			printf("Driver details\n");
+			printf("Driver name		: %s\n",array1[1]);
+			printf("Driver No		: %s\n",array1[2]);
+			printf("NIC Number		: %s\n",array1[3]);
+			printf("Phone Number	: %s\n\n",array1[4]);
+			
+			printf("Conductor details\n");
+			printf("Conductor name	: %s\n",array1[5]);
+			printf("Conductor No	: %s\n",array1[6]);
+			printf("NIC Number		: %s\n",array1[7]);
+			printf("Phone Number	: %s\n",array1[8]);
+		}
+		
+	else if(strcmp(busno,array2[0])==0)
+		{
+	
+			printf("Driver details\n");
+			printf("Driver name		: %s\n",array2[1]);
+			printf("Driver No		: %s\n",array2[2]);
+			printf("NIC Number		: %s\n",array2[3]);
+			printf("Phone Number		: %s\n\n",array2[4]);
+			
+			printf("Conductor details\n");
+			printf("Conductor name	: %s\n",array2[5]);
+			printf("Conductor No	: %s\n",array2[6]);
+			printf("NIC Number		: %s\n",array2[7]);
+			printf("Phone Number	: %s\n",array2[8]);
+	
+		}
+	
+	else if(strcmp(busno,array3[0])==0)
+		{
+	
+			printf("Driver details\n");
+			printf("Driver name		: %s\n",array3[1]);
+			printf("Driver No		: %s\n",array3[2]);
+			printf("NIC Number		: %s\n",array3[3]);
+			printf("Phone Number		: %s\n\n",array3[4]);
+			
+			printf("Conductor details\n");
+			printf("Conductor name	: %s\n",array3[5]);
+			printf("Conductor No	: %s\n",array3[6]);
+			printf("NIC Number: %s\n",array3[7]);
+			printf("Phone Number	: %s\n",array3[8]);
+	
+		}
+
+	else if(strcmp(busno,array4[0])==0)
+		{
+	
+			printf("Driver details\n");
+			printf("Driver name		: %s\n",array4[1]);
+			printf("Driver No		: %s\n",array4[2]);
+			printf("NIC Number		: %s\n",array4[3]);
+			printf("Phone Number	: %s\n\n",array4[4]);
+			
+			printf("Conductor details\n");
+			printf("Conductor name	: %s\n",array4[5]);
+			printf("Conductor No	: %s\n",array4[6]);
+			printf("NIC Number		: %s\n",array4[7]);
+			printf("Phone Number	: %s\n",array4[8]);
+	
+		}
+	
+	else if(strcmp(busno,array5[0])==0)
+		{
+	
+			printf("Driver details\n");
+			printf("Driver name		: %s\n",array5[1]);
+			printf("Driver No		: %s\n",array5[2]);
+			printf("NIC Number		: %s\n",array5[3]);
+			printf("Phone Number	: %s\n\n",array5[4]);
+			
+			printf("Conductor details\n");
+			printf("Conductor name	: %s\n",array5[5]);
+			printf("Conductor No	: %s\n",array5[6]);
+			printf("NIC Number		: %s\n",array5[7]);
+			printf("Phone Number	: %s\n",array5[8]);
+	
+		}
+		    
+	else 
+		{
+			printf("bus num is incorrect");
+		}
+}
+
