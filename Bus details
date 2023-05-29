@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+	char destination[10];
+	char array1[5][30] = {"AB-1112","54","Kandy","7.15AM","Dambulla, Mathale"};
+	char array2[5][30] = {"AB-1123","54","Kaluthara","6.00AM","Wariyapola,Gampaha"};
+	char array3[5][30] = {"AB-1124","54","Colombo","6.30AM","Kurunegala"};
+	char array4[5][30] = {"AB-1132","54","Galle","8.00PM","Giriulla, Malabe, Wadduwa"};
+	char array5[5][30] = {"AB-1143","54","Jaffna","7.00AM","Wawniya, Kilinochchi"};
+	
+	printf("Enter the destination : ");
+	scanf("%s", &destination);
+	if (strcmp(destination,array1[2])== 0){
+		printf("Route details from Anuradhapura to %s\n",array1[2]);
+		printf("Bus number 	: %s\n",array1[0]);
+		printf("Seats 		: %s\n",array1[1]);
+		printf("Starting time 	: %s\n",array1[3]);
+		printf("Stopping places	: %s\n",array1[4]);
+		
+	}else if (strcmp(destination,array2[2])== 0){
+		printf("Route details from Anuradhapura to %s\n",array2[2]);
+		printf("Bus number 	: %s\n",array2[0]);
+		printf("Seats 		: %s\n",array2[1]);
+		printf("Starting time 	: %s\n",array2[3]);
+		printf("Stopping places	: %s\n",array2[4]);
+		
+	}else if (strcmp(destination,array3[2])== 0){
+		printf("Route details from Anuradhapura to %s\n",array3[2]);
+		printf("Bus number 	: %s\n",array3[0]);
+		printf("Seats 		: %s\n",array3[1]);
+		printf("Starting time 	: %s\n",array3[3]);
+		printf("Stopping places	: %s\n",array3[4]);
+		
+	}else if (strcmp(destination,array4[2])== 0){
+		printf("Route details from Anuradhapura to %s\n",array4[2]);
+		printf("Bus number 	: %s\n",array4[0]);
+		printf("Seats 		: %s\n",array4[1]);
+		printf("Starting time 	: %s\n",array4[3]);
+		printf("Stopping places	: %s\n",array4[4]);
+		
+	}else if (strcmp(destination,array5[2])== 0){
+		printf("Route details from Anuradhapura to %s\n",array5[2]);
+		printf("Bus number 	: %s\n",array5[0]);
+		printf("Seats 		: %s\n",array5[1]);
+		printf("Starting time 	: %s\n",array5[3]);
+		printf("Stopping places	: %s\n",array5[4]);
+	}
+	return 0;
+}
+
